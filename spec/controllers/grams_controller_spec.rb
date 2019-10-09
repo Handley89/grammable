@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe GramsController, type: :controller do
 
-  describe "grams#destroy action" do
+      describe "grams#destroy action" do
 
         it "shouldn't allow users who didn't create the gram to destroy it" do
           gram = FactoryBot.create(:gram)
@@ -35,7 +35,7 @@ RSpec.describe GramsController, type: :controller do
           expect(response).to have_http_status(:not_found)
 
         end
-  end
+      end
 
 
     describe "grams#update action" do
@@ -192,3 +192,4 @@ RSpec.describe GramsController, type: :controller do
     end
 
   end
+end
