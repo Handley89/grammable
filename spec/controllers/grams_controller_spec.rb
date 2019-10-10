@@ -144,7 +144,7 @@ RSpec.describe GramsController, type: :controller do
       get :new
       expect(response).to redirect_to new_user_session_path
     end
-
+  end
     it "should successfully show the new form" do
       user = FactoryBot.create(:user)
       sign_in user
